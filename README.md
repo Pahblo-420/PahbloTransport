@@ -6,7 +6,7 @@
 ## Overview
 Scholar Transport is a static website designed to showcase school transportation services, including daily transport, after-school transport, and special trips. It provides clear information about services, safety measures, routes, and contact details to help parents and schools make informed decisions.
 
-![Home Page Screenshot](images/homepage.png)
+![Home Page Screenshot](assets/images/homepage.png)
 
 ## Features
 - Home page with hero section and introduction
