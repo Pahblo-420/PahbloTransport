@@ -2,6 +2,9 @@
 
 /* Hero Section */
 .safety-hero {
+    background-image: url("../images/vehicle-1.png");
+    background-position: center;
+    background-size: cover;
     background-color: #f5f5f5;
     padding: 80px 0;
     text-align: center;
@@ -60,32 +63,36 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* CTA Section */
-.safety-cta {
-    background-color: #0b5ed7;
-    color: #ffffff;
-    padding: 60px 0;
+/* About CTA */
+.about-cta {
+    background: linear-gradient(135deg, #98b7d3, #0c52d4); 
+    padding: 40px 30px;
     text-align: center;
+    border-radius: 16px; 
+    max-width: 90%;
+    margin: 20px auto; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.safety-cta h2 {
+.about-cta h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.safety-cta p {
+.about-cta p {
     font-size: 1.1rem;
     margin-bottom: 25px;
 }
 
-.safety-cta .btn {
+.about-cta .btn {
     padding: 14px 28px;
     border-radius: 8px;
     font-weight: 600;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
 }
 
-.safety-cta .btn.primary:hover {
+.about-cta .btn.primary:hover {
     transform: scale(1.05);
 }
 
