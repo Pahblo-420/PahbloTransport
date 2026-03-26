@@ -1,6 +1,6 @@
 /* Hero Section */
 .services-hero {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),     url("../images/services.png");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),  url("../images/services.png");
     background-position: center;
     background-size: cover;
     background-color: #f5f5f5;
