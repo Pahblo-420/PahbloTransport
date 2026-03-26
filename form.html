@@ -1,0 +1,29 @@
+<!-- form.html -->
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Get a Quote</h2>
+    <form id="quoteForm">
+      <label for="pickup">Pickup Location:</label>
+      <input type="text" id="pickup" name="pickup" required>
+
+      <label for="dropoff">Drop-off Location:</label>
+      <input type="text" id="dropoff" name="dropoff" required>
+
+      <label for="grade">Student Grade/Year:</label>
+      <input type="number" id="grade" name="grade" min="1" max="12" required>
+
+      <label for="frequency">Frequency:</label>
+      <select id="frequency" name="frequency" required>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+      </select>
+
+      <label for="special">Special Requirements:</label>
+      <input type="text" id="special" name="special" placeholder="Optional">
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="quoteResult" class="quote-result"></div>
+  </div>
+</div>
