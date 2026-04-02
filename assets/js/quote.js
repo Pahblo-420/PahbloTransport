@@ -18,7 +18,7 @@ fetch("form.html")
     // Open modal function
     function openModal(e) {
       e.preventDefault();
-      modal.style.display = "block";
+      modal.style.display = "flex";
     }
 
     // Attach to both buttons
