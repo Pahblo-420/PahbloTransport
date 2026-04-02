@@ -1,29 +1,44 @@
-<!-- form.html -->
 <div id="quoteModal" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close" onclick="document.getElementById('quoteModal').style.display='none'">&times;</span>
     <h2>Get a Quote</h2>
-    <form id="quoteForm">
-      <label for="pickup">Pickup Location:</label>
-      <input type="text" id="pickup" name="pickup" required>
+    <p>Fill in the details below and we'll email you a quote.</p>
+    
+    <form id="quoteForm" action="https://formspree.io/f/mgoplkzg" method="POST">
+      
+      <input type="hidden" name="_subject" value="New Quote Request - Pahblo Scholar Transport">
+      
+      <div class="form-group">
+        <input type="text" name="parentName" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+      </div>
 
-      <label for="dropoff">Drop-off Location:</label>
-      <input type="text" id="dropoff" name="dropoff" required>
+      <div class="form-row">
+        <input type="number" id="grade" name="grade" placeholder="Learner Grade" min="0" max="12" required>
+        <select id="frequency" name="frequency" required>
+          <option value="" disabled selected>Frequency</option>
+          <option value="daily">Daily (Both Ways)</option>
+          <option value="morning">Morning Only</option>
+          <option value="afternoon">Afternoon Only</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <input type="text" name="pickup_area" placeholder="Pickup Suburb/Area" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="text" name="school_name" placeholder="School Name" required>
+      </div>
 
-      <label for="grade">Student Grade/Year:</label>
-      <input type="number" id="grade" name="grade" min="1" max="12" required>
-
-      <label for="frequency">Frequency:</label>
-      <select id="frequency" name="frequency" required>
-        <option value="daily">Daily</option>
-        <option value="weekly">Weekly</option>
-      </select>
-
-      <label for="special">Special Requirements:</label>
-      <input type="text" id="special" name="special" placeholder="Optional">
-
-      <button type="submit">Submit</button>
+      <button type="submit" class="submit-btn">Send My Quote</button>
+      
+      <p id="quoteResult"></p>
     </form>
-    <div id="quoteResult" class="quote-result"></div>
   </div>
 </div>
