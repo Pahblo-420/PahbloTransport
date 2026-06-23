@@ -19,7 +19,9 @@ Scholar Transport is a static website designed to showcase school transportation
 ## Technologies Used
 - HTML5
 - CSS3
+- Vanilla JS
 - Font Awesome (for icons)
+- Vite for Bundling
 
 ## Project Structure
 ```
@@ -90,6 +92,4 @@ You can customize the website by:
 ## Author
 **Paballo Lipopo** – Computer Science student with an interest in web development and community-focused technology solutions.
 
-## License
-This project is for educational and demonstration purposes. You may modify and use it for personal or academic projects.
 
