@@ -1,44 +1,36 @@
 <div id="quoteModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="document.getElementById('quoteModal').style.display='none'">&times;</span>
-    <h2>Get a Quote</h2>
-    <p>Fill in the details below and we'll email you a quote.</p>
-    
-    <form id="quoteForm" action="https://formspree.io/f/mgoplkzg" method="POST">
-      
-      <input type="hidden" name="_subject" value="New Quote Request - Pahblo Scholar Transport">
-      
-      <div class="form-group">
-        <input type="text" name="parentName" placeholder="Full Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Email Address" required>
-      </div>
-      <div class="form-group">
-        <input type="tel" name="phone" placeholder="Phone Number" required>
-      </div>
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Get a Monthly Quote Estimate</h2>
+        <p>Fill in your details for an instant monthly estimate.</p>
+        
+        <form id="quoteForm" action="YOUR_FORMSPREE_LINK_HERE" method="POST">
+            <input type="text" name="parentName" placeholder="Parent/Guardian Name" required>
+            <input type="tel" name="phone" placeholder="WhatsApp/Phone Number" required>
+            <input type="text" name="schoolName" placeholder="School Name" required>
 
-      <div class="form-row">
-        <input type="number" id="grade" name="grade" placeholder="Learner Grade" min="0" max="12" required>
-        <select id="frequency" name="frequency" required>
-          <option value="" disabled selected>Frequency</option>
-          <option value="daily">Daily (Both Ways)</option>
-          <option value="morning">Morning Only</option>
-          <option value="afternoon">Afternoon Only</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <input type="text" name="pickup_area" placeholder="Pickup Suburb/Area" required>
-      </div>
-      
-      <div class="form-group">
-        <input type="text" name="school_name" placeholder="School Name" required>
-      </div>
+            <label for="tripType">Type of Service:</label>
+            <select id="tripType" name="tripType" required>
+                <option value="twoway">Two-way (Morning & Afternoon)</option>
+                <option value="oneway">One-way (Morning OR Afternoon only)</option>
+            </select>
 
-      <button type="submit" class="submit-btn">Send My Quote</button>
-      
-      <p id="quoteResult"></p>
-    </form>
-  </div>
+            <label for="distance">Estimated Distance (Home to School):</label>
+            <select id="distance" name="distance" required>
+                <option value="local">Nearby (Under 5km)</option>
+                <option value="medium">Medium (5km - 15km)</option>
+                <option value="far">Far (Over 15km)</option>
+            </select>
+
+            <label for="learners">Number of Learners (Siblings):</label>
+            <select id="learners" name="learners" required>
+                <option value="1">1 Learner</option>
+                <option value="2">2 Learners (10% Discount)</option>
+                <option value="3">3+ Learners (15% Discount)</option>
+            </select>
+
+            <button type="submit" class="btn primary">Calculate & Send Request</button>
+            <p id="quoteResult" style="margin-top: 15px; font-weight: bold;"></p>
+        </form>
+    </div>
 </div>
