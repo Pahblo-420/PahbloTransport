@@ -1,123 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safety | Pahblo Scholar Transport</title>
-  <meta name="description" content="Pahblo Scholar Transport provides safe, reliable, and affordable school transport services for learners. Trusted by parents, focused on safety and punctuality.">
-  
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <link rel="stylesheet" href="assets/css/quote.css">
-  
-  <link rel="stylesheet" href="assets/css/safety.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety | Pahblo Scholar Transport</title>
+    <meta name="description" content="Pahblo Scholar Transport provides safe, reliable, and affordable school transport services for learners. Trusted by parents, focused on safety and punctuality.">
+    
+    <!-- Open Graph Meta Tags for Link Previews -->
+    <meta property="og:title" content="Our Safety Commitment | Pahblo Scholar Transport" />
+    <meta property="og:description" content="Your child’s safety is our highest priority. Learn about our vetted drivers, roadworthy vehicles, and strict safety regulations." />
+    <meta property="og:type" content="website" />
 
- 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Performance: Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- CSS files (Updated with ./) -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/quote.css">
+    <link rel="stylesheet" href="./assets/css/safety.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  
-  <header class="header">
-    <div class="container nav-container">
-      <div class="logo">
-        <img src="assets/images/logo.png" alt="Pahblo Logo">
-        <span><strong>Pahblo</strong> Scholar Transport</span>
-      </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <!-- Added clickable link back to home to match other pages -->
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="Pahblo Scholar Transport Logo">
+                </a>
+                <span><strong>Pahblo</strong> Scholar Transport</span>
+            </div>
 
-      <nav class="nav">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="safety.html" class="active">Safety</a></li>
-          <li><a href="routes.html">Routes</a></li>
-          <li><a href="#" id="quoteBtnNav" class="btn-nav">Get a Quote</a></li>
-        </ul>
-      </nav>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="safety.html" class="active">Safety</a></li>
+                    <li><a href="routes.html">Routes</a></li>
+                    <li><a href="#" id="quoteBtnNav" class="btn-nav">Get a Quote</a></li>
+                </ul>
+            </nav>
 
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="safety-hero">
-    <div class="container">
-      <h1>Our Safety Commitment</h1>
-      <p>Your child’s safety is our highest priority. We take pride in providing a secure and reliable transport experience for your family.</p>
-    </div>
-  </section>
-
-  <!-- Safety Features -->
-  <section class="safety-features">
-    <div class="container features-grid">
-
-      <div class="feature-card">
-        <i class="fas fa-user-tie fa-2x"></i>
-        <h3>Experienced Drivers</h3>
-        <p>All drivers are trained, licensed, and carefully vetted for responsibility.</p>
-      </div>
-
-      <div class="feature-card">
-        <i class="fas fa-car-side fa-2x"></i>
-        <h3>Well-Maintained Vehicles</h3>
-        <p>Vehicles are regularly inspected, maintained, and fully roadworthy.</p>
-      </div>
-
-      <div class="feature-card">
-        <i class="fas fa-shield-alt fa-2x"></i>
-        <h3>Regulation Compliance</h3>
-        <p>Strict adherence to traffic laws and school transport safety regulations.</p>
-      </div>
-
-      <div class="feature-card">
-        <i class="fas fa-comments fa-2x"></i>
-        <h3>Parent Communication</h3>
-        <p>Parents are kept informed with real-time updates and transparent communication.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Call To Action -->
-  <section class="about-cta">
-    <div class="container">
-        <h2>Looking for Safe Scholar Transport?</h2>
-        <p>Contact us today to discuss routes, availability, and pricing.</p>
-        <a href="#" id="quoteBtn" class="btn primary">Get a Quote</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-info">
-        <div class="footer-logo">
-          <img src="assets/images/logo.png" alt="Pahblo Scholar Transport Logo">
-          <span>Pahblo Scholar Transport</span>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         </div>
-        <p>Safe | Reliable | Caring</p>
-      </div>
+    </header>
 
-      <div class="footer-contact">
-        <p><strong>Phone:</strong> 
-          <a href="tel:+27603412027">+27-60 341 2027</a> or 
-          <a href="tel:+27603422027">+27-60 341 2027</a>
-        </p>
-        <p><strong>Email:</strong> 
-          <a href="mailto:pahblo420@gmail.com">pahblo420@gmail.com</a>
-        </p>
-        <p><strong>Operating Hours:</strong> Mon - Fri, 07:00 - 18:00</p>
-      </div>
-    </div>
+    <!-- Hero Section -->
+    <section class="safety-hero">
+        <div class="container">
+            <h1>Our Safety Commitment</h1>
+            <p>Your child’s safety is our highest priority. We take pride in providing a secure and reliable transport experience for your family.</p>
+        </div>
+    </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 Pahblo Scholar Transport. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Safety Features -->
+    <section class="safety-features">
+        <div class="container features-grid">
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/quote.js"></script>
+            <div class="feature-card">
+                <i class="fas fa-user-tie fa-2x"></i>
+                <h3>Experienced Drivers</h3>
+                <p>All drivers are trained, licensed, and carefully vetted for responsibility.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-car-side fa-2x"></i>
+                <h3>Well-Maintained Vehicles</h3>
+                <p>Vehicles are regularly inspected, maintained, and fully roadworthy.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-shield-alt fa-2x"></i>
+                <h3>Regulation Compliance</h3>
+                <p>Strict adherence to traffic laws and school transport safety regulations.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-comments fa-2x"></i>
+                <h3>Parent Communication</h3>
+                <p>Parents are kept informed with real-time updates and transparent communication.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="about-cta">
+        <div class="container">
+            <h2>Looking for Safe Scholar Transport?</h2>
+            <p>Contact us today to discuss routes, availability, and pricing.</p>
+            <a href="#" id="quoteBtn" class="btn primary">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <!-- Footer logo (Updated with ./) -->
+                    <img src="./assets/images/logo.png" alt="Pahblo Scholar Transport Logo">
+                    <span>Pahblo Scholar Transport</span>
+                </div>
+                <p>Safe | Reliable | Caring</p>
+            </div>
+
+            <div class="footer-contact">
+                <p><strong>Phone:</strong> 
+                    <a href="tel:+27603412027">+27-60 341 2027</a> or 
+                    <!-- Fixed dial link typo from 22027 to 12027 -->
+                    <a href="tel:+27603412027">+27-60 341 2027</a>
+                </p>
+                <p><strong>Email:</strong> 
+                    <a href="mailto:pahblo420@gmail.com">pahblo420@gmail.com</a>
+                </p>
+                <p><strong>Operating Hours:</strong> Mon - Fri, 07:00 - 18:00</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pahblo Scholar Transport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS (Updated with ./ and type="module") -->
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/quote.js"></script>
 </body>
 </html>
